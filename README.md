@@ -3,10 +3,10 @@
 A **secure authentication API** using **Node.js, Express, JWT, Google OAuth2, and Two-Factor Authentication (2FA)**.
 
 ## 🚀 Features
-✅ **User Authentication** (Register, Login, Logout)  
+✅ **User Authentication** (Register, Login)  
 ✅ **Google OAuth 2.0 Login**  
 ✅ **JWT Token Authentication**  
-✅ **Two-Factor Authentication (2FA)** with OTP  
+✅ **Two-Factor Authentication (2FA)** with OTP & QR Code
 ✅ **Secure Routes** for logged-in users  
 ✅ **Password Hashing with bcrypt**  
 ✅ **Proper Error Handling & Security Measures**  
@@ -52,7 +52,7 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 EMAIL_SERVICE=email_service_for_2fa
 EMAIL_USER=your_email
-EMAIL_PASS=your_email_password
+EMAIL_PASS=your_email_password (App Password)
 ```
 
 ### 4️⃣ Start the Server  
@@ -70,7 +70,6 @@ npm run dev
 |--------|----------------------|-----------------------------|
 | POST   | `/api/auth/register` | Register a new user        |
 | POST   | `/api/auth/login`    | Login and get JWT token    |
-| GET    | `/api/auth/logout`   | Logout user                |
 
 ### **Google Authentication**  
 | Method | Endpoint                | Description                     |
@@ -81,7 +80,7 @@ npm run dev
 ### **Protected Routes (JWT Required)**  
 | Method | Endpoint            | Description          |
 |--------|---------------------|----------------------|
-| GET    | `/api/protected`    | Test Protected Route |
+| GET    | `/api/profile`    | Test Protected Route |
 
 ---
 
@@ -94,8 +93,15 @@ npm run dev
 
 ---
 
+## 🏗 About the Development
+This project serves as a **pre-built secure authentication template** for developers seeking a hassle-free and **ready-to-use** authentication system. It eliminates the need to worry about security concerns, token management, or OAuth integration, allowing developers to **focus on building their application** rather than spending time on authentication implementation. 
+
+This template is designed to be **scalable, secure, and easy to integrate**, making it the perfect choice for projects requiring a strong authentication system without the complexity.
+
+---
+
 ## 📜 License  
 This project is licensed under the **MIT License**.  
 
 🔗 **Live Demo:** _Coming Soon_ 🚀  
-💬 **Need Help?** Create an issue or reach out! 🎯  
+💬 **Need Help?** Create an issue or reach out! 🎯
